@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
               href="/"
               className="text-2xl absolute top-0 left-4 font-extrabold text-gray-900 dark:text-white select-none"
             >
-              HKB<span className="text-yellow-400"> Tech</span>
+              Magic<span className="text-yellow-400"> Auto</span>
             </a>
           </div>
         
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
                   smooth={true}
                   duration={500}
                   offset={-60}
-                  className="cursor-pointer hover:text-yellow-500 dark:hover:text-yellow-400 transition"
+                  className="cursor-pointer hover:text-yellow-400 dark:hover:text-yellow-400 transition"
                 >
                   {t(link.name)}
                 </ScrollLink>
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
           <h2 className="text-xl font-bold text-white dark:text-yellow-400 mb-4">
             {t("Réseaux sociaux")}
           </h2>
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+          <p className="text-sm text-gray-800 dark:text-white mb-4">
             {t("Suivez-nous pour ne rien rater de nos offres.")}
           </p>
           <div className="flex space-x-4">
