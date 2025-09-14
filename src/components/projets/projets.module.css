@@ -1,0 +1,22 @@
+:root {
+    --color-background: #1f1f1f;
+  }
+
+
+  
+
+
+.projetContainer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+ 
+  
+  }
+  
+  .customPagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+   color: yellow;
+  }
