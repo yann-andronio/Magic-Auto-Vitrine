@@ -62,7 +62,7 @@ const Typedeservice: React.FC = () => {
   return (
     <section id="Services" className="relative py-20 px-6 mt-6">
       <img
-        className="absolute hidden sm:block sm:w-32 sm:bottom-[10%] sm:right-[4%] lg:block   lg:w-80 lg:top-[15%]  lg:left-[3%]"
+        className="absolute hidden  sm:w-32 sm:bottom-[10%] sm:right-[4%] lg:block   lg:w-80 lg:top-[15%]  lg:left-[3%]"
         src="./image/V1.png"
       />
       {/* Titre global */}

@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import Responsivenavbar from "../responsivenavbar/Responsivenavbar";
 import confetti from "canvas-confetti";
 import { Link as ScrollLink } from "react-scroll";
+
 const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
 
@@ -21,10 +22,11 @@ const Navbar: React.FC = () => {
   const btndarkMode = () => {
     setDarkMode((prev) => !prev);
 
-    const end = Date.now() + 1 * 1000; 
+    const end = Date.now() + 1 * 1000;
     const lightColors = ["#DDEDF4", "#B8D6E7", "#7EBBD5"];
     const darkColors = ["#000C18", "#1F3C61", "#2A3A59"];
     const colors = darkMode ? darkColors : lightColors;
+
     const frame = () => {
       if (Date.now() > end) return;
 
@@ -61,22 +63,23 @@ const Navbar: React.FC = () => {
   const [menuopen, setmenuopen] = useState<boolean>(false);
 
   return (
-    <nav id="Accueil" className="w-full bg-transparent dark:bg-transparent   ">
+    <nav id="Accueil" className="w-full bg-transparent dark:bg-transparent">
       <div className="max-w-full mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 relative">
+          {/* Logo gauche */}
           <div className="flex items-center gap-3 cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out">
             <img src="./image/logo1.png" alt="Logo" className="h-10 w-auto" />
             <a
               href="/"
               className="text-2xl font-extrabold text-gray-900 dark:text-white select-none"
             >
-              HKB<span className="text-yellow-500"> Tech</span>
+              Magic<span className="text-yellow-500"> Auto</span>
             </a>
           </div>
 
-          <div className="hidden md:flex space-x-10  text-gray-900 dark:text-gray-100 px-8 py-3 ">
-
-            {["Accueil", "A propos", "Services","Projets" ,  "Contact", "FAQ"].map(
+       
+          <div className="absolute left-1/2 transform -translate-x-1/2 hidden lg:flex space-x-10 items-center text-gray-900 dark:text-gray-100">
+            {["Accueil", "A propos", "Services", "Contact", "FAQ"].map(
               (item, index) => (
                 <ScrollLink
                   key={index}
@@ -92,6 +95,7 @@ const Navbar: React.FC = () => {
             )}
           </div>
 
+        
           <div className="flex items-center space-x-6">
             <button
               onClick={ManovaLanguage}
@@ -110,7 +114,7 @@ const Navbar: React.FC = () => {
             </button>
 
             <button
-              className="md:hidden text-gray-700 dark:text-gray-300 hover:text-yellow-500"
+              className="lg:hidden text-gray-700 dark:text-gray-300 hover:text-yellow-500"
               onClick={() => setmenuopen(!menuopen)}
             >
               {menuopen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -118,6 +122,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
+        {/* Menu mobile */}
         {menuopen && <Responsivenavbar setmenuopen={setmenuopen} />}
       </div>
     </nav>

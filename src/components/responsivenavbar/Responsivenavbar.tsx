@@ -11,7 +11,7 @@ const Responsivenavbar: React.FC<Props> = ({ setmenuopen }) => {
   const { t } = useTranslation();
 
   return (
-    <div className=" md:hidden  absolute top-20 right-4  w-40  bg-white dark:bg-gray-900/90  rounded-lg  shadow-xl  backdrop-blur-sm  border border-gray-200 dark:border-gray-700 z-50 py-2">
+    <div className=" lg:hidden  absolute top-20 right-4  w-40  bg-white dark:bg-gray-900/90  rounded-lg  shadow-xl  backdrop-blur-sm  border border-gray-200 dark:border-gray-700 z-50 py-2">
       {["Accueil", "A propos", "Services", "Contact", "FAQ"].map((item) => (
         <ScrollLink
           key={item}

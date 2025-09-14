@@ -1,6 +1,14 @@
 {
-  "about": "About",
-  "project" : "Project",
-  "contact": "Contact"
- 
+  "Accueil": "Home",
+  "A propos": "About",
+  "Services": "Services",
+  "Projets": "Projects",
+  "Contact": "Contact",
+  "FAQ": "FAQ",
+  "hero": {
+    "title1": "Votre véhicule partira",
+    "title2": "Comme neuf, éclatant de propreté",
+    "subtitle": "Magic Auto vous offre un moment inoubliable",
+    "button": "Contacter-nous maintenant"
+  }
 }

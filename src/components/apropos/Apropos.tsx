@@ -75,12 +75,13 @@ const Apropos: React.FC = () => {
             smooth={true}
             duration={500}
             offset={-60}
-            href="#vision"
             data-aos="zoom-in"
             data-aos-delay="600"
-            className="inline-block bg-yellow-400 dark:bg-yellow-400 text-gray-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-yellow-500 dark:hover:bg-yellow-400 transition-colors duration-300"
+            className="inline-block bg-yellow-400 dark:bg-yellow-400 text-gray-800 dark:text-gray-900 font-semibold px-8 py-3 rounded-full shadow-lg  hover:bg-yellow-500 dark:hover:bg-yellow-500 
+             hover:scale-105 hover:shadow-xl 
+             transition duration-300 ease-in-out cursor-pointer"
           >
-            {t("Découvrez notre service")}
+            Découvrez notre service
           </ScrollLink>
         </div>
 

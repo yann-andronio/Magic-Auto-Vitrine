@@ -1,5 +1,15 @@
 {
-  "about": "À propos",
-  "project" : "Projet",
-  "contact": "Contact"
+  "Accueil": "Accueil",
+  "A propos": "À propos",
+  "Services": "Services",
+  "Projets": "Projets",
+  "Contact": "Contact",
+  "FAQ": "FAQ",
+
+  "hero": {
+    "title1": "Your vehicle will leave",
+    "title2": "Like new, shining clean",
+    "subtitle": "Magic Auto offers you an unforgettable experience",
+    "button": "Contact us now"
+  }
 }
