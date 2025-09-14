@@ -29,7 +29,7 @@ const Service: React.FC = () => {
     <section id="Services" className="relative py-20 px-6 mt-6">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Nos Offres
+          Nos Services
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300">
           Découvrez nos services de lavage complet et de parking sécurisé,

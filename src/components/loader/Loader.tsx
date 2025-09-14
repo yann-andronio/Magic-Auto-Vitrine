@@ -89,7 +89,7 @@ const Loader: React.FC<LoaderProps> = ({ onComplete }) => {
       </motion.div>
 
       <motion.img
-        src="/image/robot1.png"
+        src="/image/vammipa.png"
         alt="Robot HKB Tech"
         className="w-48 md:w-64 select-none drop-shadow-[0_10px_10px_rgba(0,0,0,0.7)]"
         animate={controls}

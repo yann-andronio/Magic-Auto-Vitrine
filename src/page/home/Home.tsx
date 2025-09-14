@@ -12,6 +12,7 @@ import Footer from "../../components/footer/Footer";
 import { useTranslation } from "react-i18next";
 import Projets from "../../components/projets/Projets";
 import Typedeservice from "../../components/typedesevice/Typedeservice";
+import "../../components/footer/foot.css"
 const Home: React.FC = () => {
   const { t } = useTranslation();
   return (
@@ -94,7 +95,9 @@ const Home: React.FC = () => {
           {/* <Projets />
           <Contact /> */}
           <Faq />
-          <Footer />
+          <div className=" pt-0 lg:pt-40 foot">
+            <Footer />
+          </div>
         </main>
       </section>
     </>
