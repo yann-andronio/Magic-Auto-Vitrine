@@ -37,7 +37,7 @@ const Faq = () => {
     <div id="FAQ" className="max-w-4xl mx-auto py-12 px-4">
       <h2 className="text-3xl md:text-4xl text-center font-bold text-gray-900 dark:text-white mb-8">
         <span className="inline-flex items-center gap-2">
-          <FiHelpCircle className="text-4xl text-yellow-400" />
+          <FiHelpCircle className="text-4xl text-white dark:text-yellow-400" />
           Foire Aux Questions
         </span>
       </h2>
@@ -48,9 +48,8 @@ const Faq = () => {
             key={index}
             data-aos="fade-up"
             data-aos-delay={index * 100}
-            className="rounded-3xl shadow-lg overflow-hidden cursor-pointer transition-transform transform hover:-translate-y-1 hover:shadow-2xl
-            
-                       dark:bg-gradient-to-r from-[#739ae9]  to-[#a6bff1]"
+            className="rounded-3xl shadow-lg overflow-hidden cursor-pointer transition-transform transform hover:-translate-y-1 hover:shadow-2xl 
+                       bg-white/90 dark:bg-gradient-to-r dark:from-[#739ae9] dark:to-[#a6bff1]"
           >
             <button
               onClick={() => toggleQuestion(index)}
@@ -73,7 +72,7 @@ const Faq = () => {
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="px-6 py-4 text-gray-800 dark:text-white text-sm leading-relaxed bg-white/30 dark:bg-transparent">
+                  <div className="px-6 py-4 text-gray-700 dark:text-white text-sm leading-relaxed bg-gray-50 dark:bg-transparent">
                     {item.answer}
                   </div>
                 </motion.div>

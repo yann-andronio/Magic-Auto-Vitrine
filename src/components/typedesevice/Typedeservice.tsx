@@ -1,12 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  MdWaterDrop,
-  MdCarRepair,
-  MdCleanHands,
-  MdLocalCarWash,
-  MdLocalParking,
-} from "react-icons/md";
+import { MdCarRepair, MdLocalCarWash, MdLocalParking } from "react-icons/md";
 import {
   FaCarSide,
   FaBroom,
@@ -73,10 +67,10 @@ const Typedeservice: React.FC = () => {
       />
       {/* Titre global */}
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-700 dark:text-white mb-4">
           Ce que nous proposons
         </h2>
-        <p className="text-lg text-gray-600 dark:text-gray-300">
+        <p className="text-lg text-gray-700 dark:text-gray-300">
           Découvrez nos prestations de lavage professionnel et nos solutions de
           parking sécurisé.
         </p>
@@ -84,7 +78,7 @@ const Typedeservice: React.FC = () => {
 
       {/* Section Lavage */}
       <div className="mb-16 mt-32">
-        <h3 className="text-2xl font-semibold text-indigo-600 dark:text-white mb-8 text-center">
+        <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-8 text-center">
           Lavage
         </h3>
 
@@ -96,17 +90,19 @@ const Typedeservice: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow bg-gradient-to-r from-[#0D47A1] to-[#0D47A1]"
+              className="rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow bg-white/90 dark:bg-gradient-to-r dark:from-[#0D47A1] dark:to-[#0D47A1]"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="bg-white p-3 rounded-full shadow-md">
+                <div className="bg-gray-100 p-3 rounded-full shadow-md">
                   {service.icon}
                 </div>
-                <h4 className="text-xl font-semibold text-white">
+                <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
                   {service.title}
                 </h4>
               </div>
-              <p className="text-white/90">{service.description}</p>
+              <p className="text-gray-700 dark:text-white/90">
+                {service.description}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -114,7 +110,7 @@ const Typedeservice: React.FC = () => {
 
       {/* Section Parking */}
       <div>
-        <h3 className="text-2xl font-semibold text-white dark:text-white mb-8 text-center">
+        <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-8 text-center">
           Parking
         </h3>
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -125,17 +121,19 @@ const Typedeservice: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow bg-gradient-to-r from-[#0D47A1] to-[#0D47A1]"
+              className="rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow bg-white/90 dark:bg-gradient-to-r dark:from-[#0D47A1] dark:to-[#0D47A1]"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="bg-white p-3 rounded-full shadow-md">
+                <div className="bg-gray-100 p-3 rounded-full shadow-md">
                   {service.icon}
                 </div>
-                <h4 className="text-xl font-semibold text-white">
+                <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
                   {service.title}
                 </h4>
               </div>
-              <p className="text-white/90">{service.description}</p>
+              <p className="text-gray-700 dark:text-white/90">
+                {service.description}
+              </p>
             </motion.div>
           ))}
         </div>

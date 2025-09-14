@@ -46,7 +46,7 @@ const Apropos: React.FC = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
           >
-            Qui est <span className="text-yellow-400">Magic Auto</span> ?
+            Qui est <span className="dark:text-yellow-400">Magic Auto</span> ?
           </h1>
 
           <p

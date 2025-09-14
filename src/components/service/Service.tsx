@@ -15,7 +15,7 @@ const services = [
   },
   {
     icon: (
-      <MdLocalParking className="text-pink-500 dark:text-[#f8c53b] w-8 h-8" />
+      <MdLocalParking className="text-orange-500 dark:text-[#f8c53b] w-8 h-8" />
     ),
     title: "Parking",
     description:
@@ -28,7 +28,7 @@ const Service: React.FC = () => {
   return (
     <section id="Services" className="relative py-20 px-6 mt-6">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-700 dark:text-white mb-4">
           Nos Services
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300">

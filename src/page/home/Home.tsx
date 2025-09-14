@@ -95,7 +95,7 @@ const Home: React.FC = () => {
           {/* <Projets />
           <Contact /> */}
           <Faq />
-          <div className=" pt-0 lg:pt-40 foot">
+          <div id="Contact" className=" pt-0 lg:pt-40 foot">
             <Footer />
           </div>
         </main>

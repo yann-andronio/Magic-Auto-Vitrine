@@ -17,8 +17,7 @@ const App = () => {
 
   return (
     <AnimatePresence mode="wait">
-      {/* {loading ? <Loader onComplete={() => setLoading(false)} /> : <Home />} */}
-      <Home />:
+      {loading ? <Loader onComplete={() => setLoading(false)} /> : <Home />}
     </AnimatePresence>
   );
 };

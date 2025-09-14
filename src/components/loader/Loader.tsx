@@ -88,20 +88,47 @@ const Loader: React.FC<LoaderProps> = ({ onComplete }) => {
         <BsStars size={40} className="text-white" />
       </motion.div>
 
-      <motion.img
-        src="/image/vammipa.png"
-        alt="Robot HKB Tech"
-        className="w-48 md:w-64 select-none drop-shadow-[0_10px_10px_rgba(0,0,0,0.7)]"
+      <motion.div
+        className="relative w-full flex justify-center items-center"
         animate={controls}
         style={{ willChange: "transform, opacity" }}
-      />
+      >
+        {/* vam 1 */}
+        <motion.img
+          src="/image/vammipa3.png"
+          alt="Voiture 1"
+          className="w-48 md:w-64 select-none drop-shadow-[0_10px_10px_rgba(0,0,0,0.7)] absolute"
+        />
+        {/* vam 2  */}
+        <motion.img
+          src="/image/tucmipa.png"
+          alt="Voiture 2"
+          className="w-48 md:w-64 select-none drop-shadow-[0_10px_10px_rgba(0,0,0,0.7)] absolute"
+          style={{ x: -200 }} 
+        />
+        {/* vam 3  */}
+        <motion.img
+          src="/image/Motomipa.png"
+          alt="Voiture 2"
+          className="w-48 md:w-64 select-none drop-shadow-[0_10px_10px_rgba(0,0,0,0.7)] absolute"
+          style={{ x: -400 }} 
+        />
+
+        {/* vam 4  */}
+        <motion.img
+          src="/image/Camionmipa.png"
+          alt="Voiture 2"
+          className="w-48 md:w-64 select-none drop-shadow-[0_10px_10px_rgba(0,0,0,0.7)] absolute"
+          style={{ x: -600 }} 
+        />
+      </motion.div>
 
       <motion.h1
         className=" text-center mt-12 text-3xl lg:text-4xl md:text-6xl font-extrabold text-white tracking-wide font-mono select-none"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={titleControls}
       >
-        welcom to HKB Tech
+        Bienvenue chez Magic Auto
       </motion.h1>
 
       <motion.p
@@ -109,7 +136,7 @@ const Loader: React.FC<LoaderProps> = ({ onComplete }) => {
         initial={{ opacity: 0, y: 20 }}
         animate={sloganControls}
       >
-        Innovation starts here. Your digital future is in our hands.
+        Propreté, sécurité et rapidité pour votre véhicule.
       </motion.p>
 
       <motion.img
